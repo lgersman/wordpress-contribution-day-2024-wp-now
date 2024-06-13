@@ -1,0 +1,31 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "meta": {
+		"title": "Latest plugins",
+		"author": "lgersman",
+		"description": "A preview of the latest plugins.",
+		"categories": ["ionos", "plugins"]
+	},
+	"landingPage": "/wp-admin/",
+  "login": true,
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "latest"
+	},
+  "phpExtensionBundles": ["kitchen-sink"],
+  "features": {
+		"networking": true
+	},
+	"steps": [
+    {
+			"step": "installTheme",
+			"themeZipFile": {
+				"resource": "wordpress.org/themes",
+				"slug": "twentytwentyfour"
+			},
+			"options": {
+				"activate": true
+			}
+		}
+	]
+}

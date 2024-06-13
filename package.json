@@ -1,0 +1,12 @@
+{
+  "name": "playground-contribution-day",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "wp-now start --php=8.3 --path=./packages/wp-content --blueprint=blueprint.json",
+    "prestart": "rm -rf ./packages/wp-content/themes/*"
+  },
+  "keywords": [],
+  "dependencies": {
+    "@wp-now/wp-now": "^0.1.72"
+  }
+}
